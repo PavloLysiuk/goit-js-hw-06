@@ -21,8 +21,8 @@ const incrementClick = () => {
   currentValue.textContent = counterValue;
 };
 
-decrementBtn.addEventListener("click", decrementClick)
-incrementBtn.addEventListener("click", incrementClick)
+decrementBtn.addEventListener('click', decrementClick);
+incrementBtn.addEventListener('click', incrementClick);
 
 // Option #2
 
