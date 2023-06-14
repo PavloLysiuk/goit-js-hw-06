@@ -9,12 +9,29 @@ const currentValue = document.querySelector('#value');
 
 let counterValue = 0;
 
-decrementBtn.addEventListener('click', event => {
+// Option #1
+
+const decrementClick = () => {
   counterValue -= 1;
   currentValue.textContent = counterValue;
-});
+};
 
-incrementBtn.addEventListener('click', event => {
+const incrementClick = () => {
   counterValue += 1;
   currentValue.textContent = counterValue;
-});
+};
+
+decrementBtn.addEventListener("click", decrementClick)
+incrementBtn.addEventListener("click", incrementClick)
+
+// Option #2
+
+// decrementBtn.addEventListener('click', event => {
+//   counterValue -= 1;
+//   currentValue.textContent = counterValue;
+// });
+
+// incrementBtn.addEventListener('click', event => {
+//   counterValue += 1;
+//   currentValue.textContent = counterValue;
+// });
