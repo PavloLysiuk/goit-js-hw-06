@@ -10,7 +10,8 @@ input.addEventListener('change', onChange);
 
 function onChange(e) {
   if (!e.currentTarget.value) {
-    input.classList.remove('invalid');
+    input.classList.remove('valid', 'invalid');
+    // input.classList.remove('invalid');
   } else if (e.currentTarget.value.length !== inputDataLength) {
     addClassInvalidInput();
   } else {
