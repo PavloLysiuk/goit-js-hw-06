@@ -5,18 +5,6 @@ const output = document.querySelector('#name-output');
 
 input.addEventListener('input', onChange);
 
-// Option 1
-
 function onChange(e) {
   e.currentTarget.value ? (output.textContent = e.currentTarget.value) : (output.textContent = 'Anonymous');
 }
-
-// Option 2
-
-// function onChange(e) {
-//   if (e.currentTarget.value) {
-//     output.textContent = e.currentTarget.value;
-//   } else {
-//     output.textContent = 'Anonymous';
-//   }
-// }
