@@ -11,18 +11,18 @@ let counterValue = 0;
 
 // Option #1
 
-const decrementClick = () => {
-  counterValue -= 1;
-  currentValue.textContent = counterValue;
-};
-
-const incrementClick = () => {
-  counterValue += 1;
-  currentValue.textContent = counterValue;
-};
-
 decrementBtn.addEventListener('click', decrementClick);
 incrementBtn.addEventListener('click', incrementClick);
+
+function decrementClick() {
+  counterValue -= 1;
+  currentValue.textContent = counterValue;
+}
+
+function incrementClick() {
+  counterValue += 1;
+  currentValue.textContent = counterValue;
+}
 
 // Option #2
 
