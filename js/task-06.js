@@ -6,7 +6,7 @@
 const input = document.querySelector('#validation-input');
 const inputDataLength = Number(document.querySelector('#validation-input').getAttribute('data-length'));
 
-input.addEventListener('change', onChange);
+input.addEventListener('blur', onChange);
 
 function onChange(e) {
   if (!e.currentTarget.value) {
